@@ -28,11 +28,11 @@ y4 = 1/T * exp(-t/T*4);
 y5 = 1/T * exp(-t/T*5);
 
 figure
-subplot(3, 3, 1), plot(t, y), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario");
-subplot(3, 3, 2), plot(t, y2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 2T");
-subplot(3, 3, 3), plot(t, y3), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 3T");
-subplot(3, 3, 4), plot(t, y4), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 4T");
-subplot(3, 3, 5), plot(t, y5), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 5T");
+subplot(3, 3, 1), plot(t, y, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario"), grid on;
+subplot(3, 3, 2), plot(t, y2 ,'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 2T"), grid on;
+subplot(3, 3, 3), plot(t, y3, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 3T"), grid on;
+subplot(3, 3, 4), plot(t, y4, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 4T"), grid on;
+subplot(3, 3, 5), plot(t, y5, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un impulso unitario con 5T"), grid on;
 grid on
 %% actividad 3
 t = (0:0.1:30);
@@ -47,11 +47,11 @@ y5=1-exp(-t/(T*5));
 
 
 figure
-subplot(3, 3, 1), plot(t, y), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario");
-subplot(3, 3, 2), plot(t, y2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 2T");
-subplot(3, 3, 3), plot(t, y3), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 3T");
-subplot(3, 3, 4), plot(t, y4), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 4T");
-subplot(3, 3, 5), plot(t, y5), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 5T");
+subplot(3, 3, 1), plot(t, y, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario"), grid on;
+subplot(3, 3, 2), plot(t, y2, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 2T"), grid on;
+subplot(3, 3, 3), plot(t, y3, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 3T"), grid on;
+subplot(3, 3, 4), plot(t, y4, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 4T"), grid on;
+subplot(3, 3, 5), plot(t, y5, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un escalon unitario con 5T"), grid on;
 
 %% actividad 4
 
@@ -68,11 +68,11 @@ y5=t - T*5 + T*4*exp(-t/T*5);
 
 
 figure
-subplot(3, 3, 1), plot(t, y), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario");
-subplot(3, 3, 2), plot(t, y2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 2T");
-subplot(3, 3, 3), plot(t, y3), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 3T");
-subplot(3, 3, 4), plot(t, y4), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 4T");
-subplot(3, 3, 5), plot(t, y5), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 5T");
+subplot(3, 3, 1), plot(t, y,'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario"), grid on;
+subplot(3, 3, 2), plot(t, y2, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 2T"), grid on;
+subplot(3, 3, 3), plot(t, y3, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 3T"), grid on;
+subplot(3, 3, 4), plot(t, y4, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 4T"), grid on;
+subplot(3, 3, 5), plot(t, y5, 'LineWidth',2), xlabel('t [segundos]'), ylabel('y(t)'), title("Respuesta a un rampa unitario con 5T"), grid on;
 
 %% actividad 5
 
